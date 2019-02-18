@@ -9,10 +9,10 @@ public class SlideShowFactory {
 	public static SlideShow getSlideShow(File pptFile) {
 		
 		String fileName = pptFile.getName();
-		if ( fileName.endsWith(".ppt") ) {
+		if ( fileName.toLowerCase().endsWith(".ppt") ) {
 			return new PPT().getSlideShow(pptFile);
 		}
-		else if ( fileName.endsWith(".pptx") ) {
+		else if ( fileName.toLowerCase().endsWith(".pptx") ) {
 			return new PPTX().getSlideShow(pptFile);
 		}
 		
