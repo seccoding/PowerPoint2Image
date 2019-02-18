@@ -2,6 +2,26 @@
 Apache-POI를 사용해 슬라이드를 이미지로 변환합니다.<br/> 
 Apache-POI의 문제인지 알 수 없으나, 텍스트 박스의 위치가 약간씩 조정될 수 있습니다.
 
+## 사용 방법
+### maven dependency에 PowerPoint2Image-1.0.0.jar 파일을 추가할 경우
+1. PowerPoint2Image-1.0.0.jar파일을 C:\에 복사합니다.
+1. Maven 명령어를 이용해 .m2 Repository 에 PowerPoint2Image-1.0.0.jar 를 설치(저장)합니다.<pre>mvn install:install-file -Dfile=C:\PowerPoint2Image-1.0.0.jar -DgroupId=io.github.seccoding -DartifactId=PowerPointer2Image -Dversion=1.0.0 -Dpackaging=jar</pre>
+1. 본인의 Project/pom.xml 에 dependency를 추가합니다.<pre>
+	&lt;dependency&gt;
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId&gt;io.github.seccoding&lt;/groupId&gt;
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;artifactId&gt;PowerPointer2Image&lt;/artifactId&gt;
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;version&gt;1.0.0&lt;/version&gt;
+	&lt;/dependency&gt;
+</pre>
+
+### 소스코드를 사용할 경우
+1. Clone or Download 를 클릭합니다.
+1. Download ZIP 을 클릭해 소스코드를 다운로드 받습니다.
+1. PowerPointer2Image/pom.xml의 dependencies를 본인의 Project/pom.xml 에 붙혀넣습니다.
+1. PowerPointer2Image/src 이하의 자바코드를 본인의 Project에 붙혀넣습니다. 
+---
+
+## 사용 방법
 <pre>
 package io.github.seccoding.ppt;
 
