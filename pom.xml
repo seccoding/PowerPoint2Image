@@ -37,7 +37,7 @@
 			<version>4.0.1</version>
 		</dependency>
 	</dependencies>
-	<url>https://github.com/seccoding/PowerPointer</url>
+	<url>https://github.com/seccoding/PowerPoint2Image</url>
 	<name>PPT Utility</name>
 	<description>PPT Utility</description>
 </project>
