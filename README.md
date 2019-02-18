@@ -15,8 +15,8 @@ public class Test {
         Converter converter = new Converter("C:\\Result\\"); // 이미지 파일이 생성될 Root Directory
 		Result result = converter.convert(
 				new File("C:\\Test PowerPoint.pptx"), // 이미지로 변환할 ppt, pptx 파일 경로
-                "Output Path Dir", // 이미지 파일이 생성될 Leaf Directory
-                "png" // 이미지 타입
+				"Output Path Dir", // 이미지 파일이 생성될 Leaf Directory
+				"png" // 이미지 타입
 		);
 		
 		System.out.println(result.getFileName());
