@@ -78,8 +78,8 @@ public class FileUtils {
 			@Override
 			public void doFunc() throws IOException {
 				CopyOption[] copyOptions = new CopyOption[] {
-						StandardCopyOption.REPLACE_EXISTING, // 원본파일이 존재한다면 덮어쓰
-						StandardCopyOption.COPY_ATTRIBUTES // 원본파일의 속성까지 모두 복
+						StandardCopyOption.REPLACE_EXISTING, // 원본파일이 존재한다면 덮어쓰기
+						StandardCopyOption.COPY_ATTRIBUTES // 원본파일의 속성까지 모두 복사
 				};
 				
 				Files.move(new File(originFilePath).toPath(), new File(destFilePath).toPath(), copyOptions);
